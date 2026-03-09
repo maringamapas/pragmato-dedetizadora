@@ -8,8 +8,8 @@ import { ShinyButton } from "@/components/ui/shiny-button"
 
 interface HeroProps {
   eyebrow?: string
-  title: string
-  subtitle: string
+  title: string | React.ReactNode
+  subtitle: string | React.ReactNode
   ctaLabel?: string
   ctaHref?: string
 }
@@ -41,7 +41,7 @@ export function Hero({
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const message = `Olá! Meu nome é ${formData.nome}. Telefone: ${formData.telefone}. Tenho interesse em: ${formData.servico}.`
-    window.open(`https://wa.me/556592275627?text=${encodeURIComponent(message)}`, "_blank")
+    window.open(`https://wa.me/5565992275627?text=${encodeURIComponent(message)}`, "_blank")
   }
 
   return (
@@ -80,16 +80,20 @@ export function Hero({
             </h1>
 
             <p className="animate-fade-in text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
-              {subtitle}
+              {typeof subtitle === 'string' ? (
+                <span dangerouslySetInnerHTML={{ __html: subtitle }} />
+              ) : (
+                subtitle
+              )}
             </p>
 
             <div className="animate-fade-in flex flex-col sm:flex-row gap-4">
               <ShinyButton
-                href="tel:+5565922756277"
+                href="tel:+5565992275627"
                 className="text-lg"
               >
                 <Phone className="w-5 h-5" />
-                (65) 9227-5627
+                (65) 99227-5627
               </ShinyButton>
               <ShinyButton
                 href={ctaHref}
