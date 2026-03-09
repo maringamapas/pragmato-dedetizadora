@@ -7,9 +7,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "PragMato Dedetizadora | Cuiabá e Várzea Grande | Ligue (65) 9227-5627 | Controle de Pragas Profissional",
+  title: "PragMato Dedetizadora | Cuiabá e Várzea Grande | Ligue (65) 99227-5627 | Controle de Pragas Profissional",
   description:
-    "PragMato Dedetizadora - Controle de pragas profissional em Cuiabá e Várzea Grande. Empresa em conformidade com a ANVISA. Ligue (65) 9227-5627",
+    "PragMato Dedetizadora - Controle de pragas profissional em Cuiabá e Várzea Grande. Empresa em conformidade com a ANVISA. Ligue (65) 99227-5627",
   keywords: "dedetizadora cuiabá, dedetização várzea grande, desratização, descupinização, controle de pragas, escorpiões, baratas, ratos, cupins",
   generator: "v0.app",
   verification: {

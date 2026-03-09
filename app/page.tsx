@@ -9,7 +9,7 @@ import { ShinyButton } from "@/components/ui/shiny-button"
 import { Bug, Rat, Hammer, Building2, Building, Hospital, UtensilsCrossed, Phone, MessageCircle, MapPin, Clock, Mail, Shield, Award, Users, ThumbsUp } from "lucide-react"
 
 export default function Page() {
-  const whatsappNumber = "556592275627"
+  const whatsappNumber = "5565992275627"
   const whatsappLink = `https://wa.me/${whatsappNumber}`
   const whatsappWithMessage = `${whatsappLink}?text=Solicito orçamento de dedetização!`
 
@@ -23,7 +23,7 @@ export default function Page() {
         eyebrow="Empresa em conformidade com a ANVISA"
         title="PragMato Dedetizadora"
         subtitle="Dedetização profissional em Cuiabá e Várzea Grande. Produtos certificados, equipe especializada e resultados garantidos."
-        ctaLabel="(65) 9227-5627"
+        ctaLabel="(65) 99227-5627"
         ctaHref={whatsappWithMessage}
       />
 
@@ -297,11 +297,11 @@ export default function Page() {
           </p>
           <div className="flex justify-center items-center gap-4 flex-wrap">
             <ShinyButton
-              href="tel:+5565922756277"
+              href="tel:+5565992275627"
               className="text-lg"
             >
               <Phone className="w-5 h-5" />
-              (65) 9227-5627
+              (65) 99227-5627
             </ShinyButton>
             <ShinyButton
               href={whatsappWithMessage}
