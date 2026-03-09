@@ -21,8 +21,8 @@ export default function Page() {
       {/* Hero Section */}
       <Hero
         eyebrow="Empresa em conformidade com a ANVISA"
-        title="PragMato Dedetizadora"
-        subtitle="Dedetização profissional em Cuiabá e Várzea Grande. Produtos certificados, equipe especializada e resultados garantidos."
+        title={<span><span className="text-[#FF8C00]">PragMato</span> Dedetizadora</span>}
+        subtitle="Dedetização profissional em Cuiabá e Várzea Grande.<br />Produtos certificados, equipe especializada e resultados garantidos."
         ctaLabel="(65) 99227-5627"
         ctaHref={whatsappWithMessage}
       />
